@@ -87,7 +87,6 @@ function timer(val){
         diagramBox.classList.remove('over_50');
     }
 
-    // diagramBox.querySelector('.piece.right').style.transform = 'rotate('+deg+'deg)';
     diagramBox.querySelector('.text b').innerText = seconds;
 
     timerTik = setTimeout(function(){
