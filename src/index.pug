@@ -1,0 +1,169 @@
+include pug/libs/_libs
+
+doctype html
+include pug/_head
+.container
+    header
+        .header__logo
+            a(href='/')
+                +image('snovio-logo')
+    .intro
+        p.intro__bg-text
+            | 50
+            span  %
+        h1.intro__title
+            | 50% OFF
+            span ALL ANNUAL PLANS
+        .intro__promo
+            .intro__promo-content
+                p We&rsquo;ve cut the price in half. But now or miss out!
+                h2
+                    | Use promo-code
+                    span  BLACKFRIDAY
+                p
+                    | at checkout to
+                    span  save up to $3468.
+    .buy-now
+        ul.buy-now__list
+            li.buy-now__item
+                p.buy-now__item-size S
+                p.buy-now__item-price
+                    span.old-price $39
+                    | 19$
+                    span /mo
+                ul.buy-now__item-sublist
+                    li
+                        | 1000
+                        span  credits
+                    li
+                        | 1000
+                        span  recipients
+                    li
+                        | Unlimited
+                        span  users
+                    li
+                        | Unlimited
+                        span   export
+                    li
+                        | Unlimited
+                        span  integrations
+                button.buy-now__item-button.btn(type='button' data-size="S" data-oldprice="$39" data-newprice="$19" data-credits="1000" data-recipients="1000" data-users="Unlimited" data-export="Unlimited" data-integrations="Unlimited") Buy now
+            li.buy-now__item
+                p.buy-now__item-size M
+                p.buy-now__item-price
+                    span.old-price $79
+                    | 39$
+                    span /mo
+                ul.buy-now__item-sublist
+                    li
+                        | 5000
+                        span  credits
+                    li
+                        | 5000
+                        span  recipients
+                    li
+                        | Unlimited
+                        span  users
+                    li
+                        | Unlimited
+                        span   export
+                    li
+                        | Unlimited
+                        span  integrations
+                button.buy-now__item-button.btn(type='button' data-size="M" data-oldprice="$79" data-newprice="$39" data-credits="5000" data-recipients="5000" data-users="Unlimited" data-export="Unlimited" data-integrations="Unlimited") Buy now
+            li.buy-now__item
+                p.buy-now__item-size L
+                p.buy-now__item-price
+                    span.old-price $169
+                    | 84$
+                    span /mo
+                ul.buy-now__item-sublist
+                    li
+                        | 20000
+                        span  credits
+                    li
+                        | 20000
+                        span  recipients
+                    li
+                        | Unlimited
+                        span  users
+                    li
+                        | Unlimited
+                        span   export
+                    li
+                        | Unlimited
+                        span  integrations
+                button.buy-now__item-button.btn(type='button' data-size="L" data-oldprice="$169" data-newprice="$84" data-credits="20000" data-recipients="20000" data-users="Unlimited" data-export="Unlimited" data-integrations="Unlimited") Buy now
+            li.buy-now__item
+                p.buy-now__item-size XL
+                p.buy-now__item-price
+                    span.old-price $289
+                    | 144$
+                    span /mo
+                ul.buy-now__item-sublist
+                    li
+                        | 50000
+                        span  credits
+                    li
+                        | Unlimited
+                        span  recipients
+                    li
+                        | Unlimited
+                        span  users
+                    li
+                        | Unlimited
+                        span   export
+                    li
+                        | Unlimited
+                        span  integrations
+                button.buy-now__item-button.btn(type='button' data-size="XL" data-oldprice="$289" data-newprice="$144" data-credits="50000" data-recipients="Unlimited" data-users="Unlimited" data-export="Unlimited" data-integrations="Unlimited" data-toggle="modal" data-target="#exampleModal") Buy now
+            li.buy-now__item
+                p.buy-now__item-size XXL
+                p.buy-now__item-price
+                    span.old-price $578
+                    | 289$
+                    span /mo
+                ul.buy-now__item-sublist
+                    li
+                        | 100000
+                        span  credits
+                    li
+                        | Unlimited
+                        span  recipients
+                    li
+                        | Unlimited
+                        span  users
+                    li
+                        | Unlimited
+                        span   export
+                    li
+                        | Unlimited
+                        span  integrations
+                button.buy-now__item-button.btn(type='button' data-size="XXL" data-oldprice="$578" data-newprice="$289" data-credits="100000" data-recipients="Unlimited" data-users="Unlimited" data-export="Unlimited" data-integrations="Unlimited" data-toggle="modal" data-target="#exampleModal") Buy now
+        .buy-now__text-bottom
+            p
+                | Get 12 months of powerful sales tools at the
+                span  lowest price of the year.
+.modal
+    .modal-bg
+    .modal-content
+        .modal-close-btn
+            +image('close-modal')
+        .item-size
+        .item-price
+            span.item-oldprice
+            span.item-newprice
+            span /mo
+        ul.item-sublist
+            li.item-credits
+            li.item-recipients
+            li.item-users
+            li.item-export
+            li.item-integrations
+        .diagram.timer(data-seconds='20')
+            //.piece.left
+            //.piece.right
+            .circle
+            .text
+                div
+                    b 20
